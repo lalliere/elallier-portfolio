@@ -25,7 +25,6 @@ body {
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 20px;
-    text-align: center;
     display: inline;
 }
 nav {
@@ -35,25 +34,28 @@ nav {
     float:right;
 }
 
-h1 {
+h1.main {
     color: #4aaaa5;
-    align-items: bottom;
+    margin: 0;
+    margin-top: 5px;
+    padding-left: 15px;
 }
 
 #main-bio {
     display: block;
     background: #ffffff;
-    border-color: #dddddd;
+    border: 1px solid #dddddd;
     width: 960px; 
     height: auto;
     justify-content: center;
     color: #777777;
     margin: 20px 180px;
-
 }
 
 #clearfix {
     overflow: auto;
+    padding: 15px;
+    line-height: 20px;
 }
     
 #bio-image {
@@ -62,7 +64,78 @@ h1 {
     float: left;
     margin-right: 20px;   
 }
-    
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    background: #ffffff;
+}
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input.msg {
+    width: 100%;
+    padding: 75px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #296461;
+}
+
+#contact-info {
+    display: block;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    width: 960px; 
+    height: auto;
+    justify-content: center;
+    color: #777777;
+    margin: 20px 180px;
+    padding: 20px;
+
+}
+
 #footer {
     clear: both;
     position: fixed;

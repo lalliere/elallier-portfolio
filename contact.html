@@ -21,18 +21,24 @@
             
         </header>
 
-        <section id="contact-info">
-            <h1>Contact</h1>
+        <div id="contact-info">
+            <h1 class="main">Contact</h1>
             <hr>
-
-            <section>Name</section>
-            
-            <section>Email</section>
-
-            <section>Message</section>
-
-            <section>Submit</section>
-        </section>
+            <div>
+                <form action="#">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="fullname" placeholder="John Smith">
+              
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="emailaddress" placeholder="example@gmail.com">
+              
+                  <label for="message">Message</label>
+                  <input class="msg" type="text" id="message" name="yourmessage" placeholder="">
+                
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+        </div>
 
         <footer id="footer">
             <p>Copyright (C)</p>
@@ -40,3 +46,4 @@
 
     </body>
 </html>
+
